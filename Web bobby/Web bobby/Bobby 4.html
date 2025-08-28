@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 3 - Galeri Bobby</title>
+  
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: url('images/bg bobby.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* ✅ Navbar fix sama page sebelumnya */
+.navbar {
+  background-color: rgba(0, 128, 85, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  height: 65px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  flex: 1;
+}
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+  gap: 12px;
+}
+.navbar .menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  background: rgba(255,255,255,0.1);
+}
+.navbar .menu a:hover {
+  background: rgba(255,255,255,0.3);
+}
+.navbar .menu a.active {
+  background: #00cc66;
+  color: #fff;
+}
+.navbar .spacer {
+  flex: 1;
+}
+
+/* ✅ Galeri */
+.gallery-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 900px;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+}
+.gallery-item:nth-child(1) { animation-delay: 0.2s; }
+.gallery-item:nth-child(2) { animation-delay: 0.4s; }
+.gallery-item:nth-child(3) { animation-delay: 0.6s; }
+.gallery-item:nth-child(4) { animation-delay: 0.8s; }
+
+img.gallery {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+img.gallery:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+}
+
+.text-box {
+  flex: 1;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  color: black;
+  text-align: left;
+}
+.text-box p {
+  font-weight: bold;
+  margin: 0;
+}
+
+/* ✅ Animasi */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">MY WEBSITE</div>
+    <div class="menu">
+      <a href="Bobby 1.html">Page 1</a>
+      <a href="Bobby 2.html">Page 2</a>
+      <a href="Bobby 3.html">Page 3</a>
+      <a href="Bobby 4.html"class="active">Page 4</a>
+    </div>
+    <div class="spacer"></div>
+  </div>
+
+  <!-- Konten galeri -->
+  <div style="margin-top:100px;">
+    <div class="gallery-item">
+      <img src="images/WhatsApp Image 2025-08-25 at 09.56.56_5bbf80e0.jpg" class="gallery">
+      <div class="text-box">
+        <p>Foto 1: ini saat saya ngeband bareng teman-teman saya, momen yang sangat menyenangkan dan tidak terlupakan.</p>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/WhatsApp Image 2025-08-25 at 10.00.28_4ceddae3.jpg" class="gallery">
+      <div class="text-box">
+        <p>Foto 2: ini saya sedang menjadi panit oasis kemarin tanggal 23 agustus pengalaman yang seru dan saya akan inget itu selalu.</p>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/WhatsApp Image 2025-08-25 at 09.56.55_1e8b015e.jpg" class="gallery">
+      <div class="text-box">
+        <p>Foto 3: ini saya sedang bermain game roblox bersama teman rumah saya, pengalaman yang sangat mengasikan saya sering bermain setelah pulang sekolah.</p>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/WhatsApp Image 2025-08-25 at 09.56.54_c53c4b41.jpg" class="gallery">
+      <div class="text-box">
+        <p>Foto 4: saya ingin berkuliah di bandung dan mengambil falkutas FTMD, sekarang saya sedang giat belajar untuk mempersiapkan kuliah saya.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

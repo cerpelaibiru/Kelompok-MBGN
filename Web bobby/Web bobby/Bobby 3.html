@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 3 - Cita-cita Bobby</title>
+  
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: url('images/bg bobby.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 128, 85, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  height: 60px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+
+  /* animasi muncul */
+  animation: slideDown 1s ease forwards;
+}
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  flex: 1;
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+  gap: 10px;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  background: rgba(255,255,255,0.1);
+}
+
+.navbar .menu a:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.navbar .menu a.active {
+  background: #00cc66;
+  color: #fff;
+}
+
+.navbar .spacer {
+  flex: 1;
+}
+
+/* Glass box */
+.glass-box {
+  display: inline-block;
+  max-width: 850px;
+  padding: 30px 50px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+  backdrop-filter: blur(12px);
+  color: white;
+  margin-top: 120px;
+  text-align: justify;
+
+  /* animasi muncul */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.2s ease forwards;
+  animation-delay: 0.5s;
+}
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Teks lebih jelas + animasi */
+.glass-box h2, 
+.glass-box p {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeText 1s ease forwards;
+}
+.glass-box h2 { 
+  text-align: center; 
+  margin-bottom: 20px; 
+  color: #aaffcc; 
+  animation-delay: 1s;
+}
+.glass-box p:nth-of-type(1) { animation-delay: 1.2s; }
+.glass-box p:nth-of-type(2) { animation-delay: 1.4s; }
+.glass-box p:nth-of-type(3) { animation-delay: 1.6s; }
+.glass-box p:nth-of-type(4) { animation-delay: 1.8s; }
+
+@keyframes fadeText {
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+</head>
+<body>
+<!-- Navbar -->
+<div class="navbar">
+  <div class="logo">MY WEBSITE</div>
+  <div class="menu">
+    <a href="Bobby 1.html">Page 1</a>
+    <a href="Bobby 2.html">Page 2</a>
+    <a href="Bobby 3.html" class="active">Page 3</a>
+    <a href="Bobby 4.html">Page 4</a>
+  </div>
+  <div class="spacer"></div>
+</div>
+
+
+  <!-- Konten Glass Box -->
+  <div>
+    <div class="glass-box">
+      <h2>CITA-CITA BOBBY</h2>
+      <p>Setiap orang memiliki cita-cita yang menjadi motivasi dalam hidupnya, begitu juga dengan saya. Sejak kecil, saya bercita-cita menjadi orang yang sukses dan mandiri secara finansial. Saya ingin bisa membantu keluarga, memberikan kebahagiaan bagi orang tua, dan bermanfaat bagi orang lain. Bagi saya, kesuksesan bukan hanya diukur dari seberapa banyak harta yang dimiliki, tetapi juga dari seberapa besar manfaat yang bisa diberikan kepada sekitar.</p>
+      
+      <p>Cita-cita untuk menjadi orang kaya tidak semata-mata karena materi, tetapi karena saya ingin memiliki kebebasan dalam hidup. Dengan memiliki kondisi ekonomi yang mapan, saya bisa mewujudkan banyak hal positif, seperti membantu orang lain yang kesulitan, mendirikan usaha, hingga menciptakan lapangan pekerjaan bagi orang lain. Itulah yang membuat saya semakin bersemangat mengejar impian ini.</p>
+      
+      <p>Tentu saja, untuk mencapai cita-cita tersebut tidak mudah. Dibutuhkan kerja keras, disiplin, doa, dan konsistensi dalam berusaha. Saya percaya bahwa dengan tekad yang kuat dan semangat pantang menyerah, suatu hari nanti saya bisa mencapai apa yang saya impikan. Cita-cita ini menjadi bahan bakar semangat saya dalam belajar, berusaha, dan terus berkembang menjadi pribadi yang lebih baik.</p>
+      
+      <p>Bagi saya, cita-cita adalah arah dan tujuan hidup. Selama saya memiliki cita-cita, saya akan selalu punya alasan untuk bangkit setiap kali terjatuh, dan itulah yang membuat hidup saya penuh arti.</p>
+    </div>
+  </div>
+</body>
+</html>

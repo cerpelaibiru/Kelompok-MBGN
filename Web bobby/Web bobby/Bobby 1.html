@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 0 - Selamat Datang</title>
+  
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: url('images/bg bobby.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 128, 85, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  height: 60px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  flex: 1; /* biar logo ke kiri */
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  flex: 2; /* biar menu ke tengah */
+  gap: 10px;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  background: rgba(255,255,255,0.1);
+}
+
+.navbar .menu a:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.navbar .menu a.active {
+  background: #00cc66;
+  color: #fff;
+}
+
+.navbar .spacer {
+  flex: 1; /* spacer buat balance kanan */
+}
+
+/* Animasi Pop-up */
+.glass-box {
+  display: inline-block;
+  padding: 30px 60px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  backdrop-filter: blur(12px);
+  color: white;
+  animation: popup 1s ease forwards;
+  transform: scale(0);
+  margin-top: 160px;
+}
+
+@keyframes popup {
+  0% { transform: scale(0); opacity: 0; }
+  70% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Teks berjalan bawah */
+.marquee-bottom {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.marquee-bottom span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee-left 12s linear infinite;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #00ffcc;
+  text-shadow: 0 0 6px black;
+}
+
+@keyframes marquee-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+</style>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">MY WEBSITE</div>
+    <div class="menu">
+      <a href="../../index.html">Beranda Utama</a>
+      <a href="Bobby 1.html" class="active">Page 1</a>
+      <a href="Bobby 2.html">Page 2</a>
+      <a href="Bobby 3.html">Page 3</a>
+      <a href="Bobby 4.html">Page 4</a>
+    </div>
+    <div class="spacer"></div>
+  </div>
+
+  <div>
+    <div class="glass-box" style="font-size:32px;font-weight:bold;">
+      SELAMAT DATANG DI WEBSITE BOBBY
+      <p style="margin-top:15px;font-size:14px;letter-spacing:4px;">
+        MENGENAL LEBIH BANYAK TENTANG WEBSITE DAN HOBBY SAYA
+      </p>
+    </div>
+  </div>
+
+  <!-- Teks Berjalan Bawah -->
+  <div class="marquee-bottom">
+    <span>Selamat datang di website ini</span>
+  </div>
+</body>
+</html>

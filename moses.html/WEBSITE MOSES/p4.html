@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Our University</title>
+  <style>
+    body {
+      margin: 0; padding: 0; min-height: 100vh;
+      background: url("FOTO3.JPG") no-repeat center/cover fixed;
+      font-family: Arial, sans-serif; color: white;
+      display: flex; flex-direction: column; 
+    }
+    h1 {
+      font-family: "Copperplate Gothic Bold","Copperplate Gothic",serif;
+      font-size: 36px; color: purple; text-align: center; margin: 50px 0 30px 0;
+    }
+    .cards {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap:20px; 
+      justify-content:center;
+      margin: 40px auto;
+      max-width: 1200px;
+      flex:1;
+    }
+    .card {
+      border-radius:14px; overflow:hidden;
+      box-shadow:0 6px 18px rgba(0,0,0,0.35); background:#1f3a44;
+    }
+    .card img {width:100%; height:180px; object-fit:cover;}
+    .card-body {padding:18px; min-height:150px; position:relative;}
+    .card-body::after {
+      content:""; position:absolute; right:12px; bottom:12px;
+      width:34px; height:34px; border-radius:50%; background:#fff;
+      box-shadow:0 2px 6px rgba(0,0,0,0.25);
+    }
+    .card h3 {
+      font-family:"Copperplate Gothic Bold","Copperplate Gothic",serif;
+      font-size:18px; margin:0 0 10px; color:#ffd768;
+    }
+    .card p {margin:0; font-size:14px; line-height:1.5; opacity:0.95;}
+
+    /* Warna berbeda tiap card */
+    .bg-blue .card-body{background:#78b8c6; color:#071826;}
+    .bg-steel .card-body{background:#5f7f93;}
+    .bg-teal .card-body{background:#0f3b34;}
+    .bg-deep .card-body{background:#102226;}
+    .bg-indigo .card-body{background:#34486b;}
+    .bg-royal .card-body{background:#2c3e50;}
+    .bg-silver .card-body{background:#4a6378;}
+    .bg-emerald .card-body{background:#0d4d40;}
+    .bg-gold .card-body{background:#9c7c2c;}
+    .bg-maroon .card-body{background:#5a1e2a;}
+    .bg-ocean .card-body{background:#0a2f4d;}
+    .bg-forest .card-body{background:#1d4028;}
+    .bg-sunset .card-body{background:#d35400;}
+    .bg-lavender .card-body{background:#6c5ce7;}
+    .bg-charcoal .card-body{background:#2f2f2f;}
+    .bg-crimson .card-body{background:#8e0d2c;}
+
+    @media(max-width:640px){.card img{height:160px;}}
+
+    /* Footer dan tombol */
+    footer {
+      text-align:center; margin:30px 0; 
+    }
+    .back-btn {
+      display:inline-block;
+      padding:12px 20px;
+      background:#34486b;
+      color:white;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:bold;
+      box-shadow:0 4px 10px rgba(0,0,0,0.3);
+      transition:0.3s;
+    }
+    .back-btn:hover {
+      background:#5f7f93;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Short Stories</h1>
+
+  <div class="cards">
+    <div class="card bg-blue">
+      <img src="FOTO10.JPG" alt="Core Memory">
+      <div class="card-body">
+        <h3>Core Memory</h3>
+        <p>Fam pict when i was 3y.o.</p>
+      </div>
+    </div>
+
+    <div class="card bg-steel">
+      <img src="FOTO11.JPG" alt="ye">
+      <div class="card-body">
+        <h3>Longest Chairmate</h3>
+        <p>Ghaly, banyak ga benernya</p>
+      </div>
+    </div>
+
+    <div class="card bg-teal">
+      <img src="FOTO12.JPG" alt="margaret">
+      <div class="card-body">
+        <h3>Trio Cooking expert???</h3>
+        <p>From competition team to trio. often cooking randomly</p>
+      </div>
+    </div>
+
+    <div class="card bg-deep">
+      <img src="FOTO13.JPG" alt="Smp CEEES">
+      <div class="card-body">
+        <h3>Loveliest Family </h3>
+        <p>From JHS till this today, still together.</p>
+      </div>
+    </div>
+
+    <div class="card bg-royal">
+      <img src="FOTO15.JPG" alt="SALAM BRIPDAS">
+      <div class="card-body">
+        <h3>SALAM BRIPDAS</h3>
+        <p>This took on our first met, and now we have known each other, even our other side.</p>
+      </div>
+    </div>
+
+    <div class="card bg-silver">
+      <img src="FOTO16.JPG" alt="Fam solo trip">
+      <div class="card-body">
+        <h3>Our deadliest solo trip</h3>
+        <p>Planned our trip on ourself, after a years on vacuum. Had many issues but at the end it's being our best trip ever</p>
+      </div>
+    </div>
+
+    <div class="card bg-emerald">
+      <img src="FOTO17.JPG" alt="IWP">
+      <div class="card-body">
+        <h3>Last hiking with Inswapala</h3>
+        <p>Being part of this organisation with many new experience unlocked, and this was took on our last hiking after many times before.</p>
+      </div>
+    </div>
+
+    <div class="card bg-gold">
+      <img src="FOTO18.JPG" alt="Golden Memory">
+      <div class="card-body">
+        <h3>Mate forever</h3>
+        <p>My first dog, caramel, she never be calm for once, always being hyperactive & cute.</p>
+      </div>
+    </div>
+
+    <div class="card bg-maroon">
+      <img src="FOTO19.JPG" alt="Trio Kristen">
+      <div class="card-body">
+        <h3>Trio Kristen</h3>
+        <p>kacau..</p>
+      </div>
+    </div>
+
+    <div class="card bg-charcoal">
+      <img src="FOTO24.JPG" alt="Charcoal">
+      <div class="card-body">
+        <h3>achievements</h3>
+        <p>Still not as much as i want.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <a href="moses.html" class="back-btn">← Back to Previous</a>
+  </footer>
+</body>
+</html>
