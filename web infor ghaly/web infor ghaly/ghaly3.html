@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tentang Saya – Hobi & Fun Fact</title>
+  <style>
+    :root {
+      --bg: #f7f7fb;
+      --fg: #1f2335;
+      --muted: #656b87;
+      --card: #ffffff;
+      --accent: #6C63FF;
+      --border: #e7e7f3;
+    }
+    [data-theme="dark"] {
+      --bg: #0f1220;
+      --fg: #eef0ff;
+      --muted: #a6add3;
+      --card: #151833;
+      --accent: #8B80FF;
+      --border: #24284a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 900px;
+      margin: auto;
+      padding: 24px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 96px 1fr auto;
+      gap: 16px;
+      align-items: center;
+      padding: 16px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 14px;
+    }
+    header img {
+      width: 96px; height: 96px; border-radius: 50%;
+      object-fit: cover; border: 2px solid var(--border);
+    }
+    h1 { margin: 0 0 4px; font-size: 1.6rem; }
+    .tagline { margin: 0; color: var(--muted); }
+    .btn {
+      border: 1px solid var(--border);
+      background: transparent;
+      padding: 10px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      color: var(--fg);
+    }
+    main { margin-top: 20px; display: grid; gap: 20px; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+    }
+    section h2 { margin-top: 0; font-size: 1.25rem; }
+    .grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .card {
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      padding: 14px;
+    }
+    .chip {
+      display: inline-block;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.95rem;
+      margin: 4px 6px 0 0;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 28px 0 6px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <!-- Ganti src dengan foto kamu -->
+      <img src="gsl.jpg" alt="Foto profil" />
+      <div>
+        <!-- Ganti nama & tagline -->
+        <h1>Ghaly Ataya</h1>
+        <p class="tagline">The Cityzen | Pecinta alam & si kulit bundar</p>
+      </div>
+      <button class="btn" id="themeBtn" aria-label="Ubah tema">🌗 Tema</button>
+    </header>
+
+    <main>
+      <!-- Tentang singkat -->
+      <section aria-labelledby="tentang">
+        <h2 id="tentang">Sekilas Tentang Saya</h2>
+        <p>
+          Hai! Saya Ghaly. Saya adalah seorang yang sangat menggemari sebuah Sepakbola, mencintai olahraga itu sebagaimana langit mencintai mentari. Sepakbola juga bahasa cinta, yang telah dipahami dengan kaki, dirasakan dengan hati, dan kunikmati sepanjang hari.
+          Selain Sepakbola, saya juga orang yang mencintai Alam karna itu adalah salah satu anugrah terbesar manusia.
+        </p>
+        <!-- Tambahkan label minat cepat -->
+        <div>
+        </div>
+      </section>
+
+      <!-- Hobi -->
+      <section aria-labelledby="hobi">
+        <h2 id="hobi">Hobi Saya</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>⚽🥇 Sepakbola</h3>
+            <p>Latihan standar Atlet & improvisasi 180 menit setiap 4 hari perminggu. Pemain Favorit adalah Leo Messi dan Kevin De Bruyne sedangkan Tim Favorit saya adalah Manchester City </em>.</p>
+            <h3>🏃‍♂ Aktivitas Fisik</h3>
+            <p>Jogging & Workout saat rest latihan.</p>
+        </div>
+      </section>
+
+      <!-- Fun facts -->
+      <section aria-labelledby="funfact">
+        <h2 id="funfact">Fun Fact Tentang Saya</h2>
+        <ul>
+          <li>Pernah ke Malaysia dan Singapore untuk bertanding.</li>
+          <li>Sempet diajak Trial ke Ajax Amsterdam, namun menolak dan lebih memilih smansa.</li>
+          <li>Orangnya gampang ketiduran.</li>
+          <li>Saat ini lagi Trial di Persita Tangerang.</li>
+          <li>Les renang 2 tahun tapi tetap gabisaa</li>
+          <li>Punya logat jawa tapi kurang mahir dalam bicara bahasa jawa</li>
+        </ul>
+      </section>
+    </main>
+
+    <main></main>
+
+     <!-- Fun facts -->
+      <section aria-labelledby="funfact">
+        <h2 id="funfact">Riwayat Karir</h2>
+        <ul>
+          <li>SSB Neo Maestro</li>
+          <li>Diklat Merden.</li>
+          <li>Madura United U16.</li>
+          <li>PSD Demak U15.</li>
+          <li>Bhayangkara Bekasi FC U16</li>
+          <li>PS Amdesta U17</li>
+          <li>Persikasi Bekasi U17</li>
+          <li>Brazillian SS U17</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+
+<!-- Tombol untuk kembali ke page 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Back Button</title>
+    <style>
+        .back-btn-container {
+            margin: 20px;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 16px;
+            background-color: #f8f9fa;
+            color: #212529;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .back-button:hover {
+            background-color: #e9ecef;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .back-button:active {
+            transform: translateY(0);
+        }
+        
+        .back-button svg {
+            margin-right: 8px;
+            width: 16px;
+            height: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="back-btn-container">
+        <a href="ghaly2.html" class="back-button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Kembali ke page sebelumnya
+        </a>
+    </div>
+
+     <!-- Tombol untuk kembali ke page awal -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Back Button</title>
+    <style>
+        .back-btn-container {
+            margin: 20px;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 16px;
+            background-color: #f8f9fa;
+            color: #212529;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .back-button:hover {
+            background-color: #e9ecef;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .back-button:active {
+            transform: translateY(0);
+        }
+        
+        .back-button svg {
+            margin-right: 8px;
+            width: 16px;
+            height: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="back-btn-container">
+        <a href="ghaly.html" class="back-button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Kembali ke page awal
+        </a>
+    </div>
+
+
+          <!-- Tombol untuk menuju page 4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Button</title>
+    <style>
+    
+        .nav-btn-container {
+            margin: 20px;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        
+        .next-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 16px;
+            background-color: #f8f9fa;
+            color: #212529;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .next-button:hover {
+            background-color: #e9ecef;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .next-button:active {
+            transform: translateY(0);
+        }
+        
+        .next-button svg {
+            margin-left: 8px;
+            width: 16px;
+            height: 16px;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-btn-container">
+        <a href="ghaly4.html" class="next-button">
+            Lanjut ke page selanjutnya
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+        </a>
+    </div>
+        
+    </script>
+    </footer>
+  </div>
+
+  <script>
+    // Toggle gelap/terang + simpan preferensi
+    const root = document.documentElement;
+    const btn = document.getElementById('themeBtn');
+    const saved = localStorage.getItem('theme');
+    if (saved) root.setAttribute('data-theme', saved);
+    btn.addEventListener('click', () => {
+      const now = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', now);
+      localStorage.setItem('theme', now);
+    });
+  </script>
+</body>
+</html>
