@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Biodata Saya</title>
+  <!-- Google Fonts biar lebih modern -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    .cover {
+      background: url('./gunung.jpg') no-repeat center center/cover;
+      height: 100vh;
+      position: relative;
+    }
+    .cover::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5); /* overlay biar teks jelas */
+    }
+    .content {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 1;
+      animation: fadeInUp 1.2s ease;
+    }
+    .content h2 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 400;
+    }
+    .content h1 {
+      margin: 10px 0;
+      font-size: 42px;
+      font-weight: 700;
+    }
+    .buttons {
+      margin-top: 25px;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 6px;
+      padding: 12px 28px;
+      background-color: #6ba9eb;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: transform 0.2s, background 0.3s;
+    }
+    .buttons a:hover {
+      transform: translateY(-3px);
+      background-color: #0056b3;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translate(-50%, -40%); }
+      to { opacity: 1; transform: translate(-50%, -50%); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background + teks -->
+  <div class="cover">
+    <div class="content">
+      <h2>Selamat Datang di Biodata Kelompok Kami</h2>
+      <h1>Kelompok MBG-N </h1>
+      <p><s>Makan Bergizi Gratis Nasional</s> Moses Bobby Ghaly Nino ✔</p>
+      <p>Kenali anggota kelompok kami secara singkat dan juga berbagai pengalaman kami.</p>
+      
+      <!-- Tombol ke halaman lain -->
+      <div class="buttons">
+        <a href="nino.html">📌 Nino El Bama</a>
+        <a href="moses.html/WEBSITE MOSES/moses.html">🎓 Moses Maro Panarian Saragih</a>
+        <a href="web infor ghaly/web infor ghaly/ghaly.html">💼 Muhammad Ghaly Athaya</a>
+        <a href="Web bobby/Web bobby/Bobby 1.html">📞 Bobby Rasita</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

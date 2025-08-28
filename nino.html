@@ -1,0 +1,233 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Nino's Biodata</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #757272 url("gambar nino/background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: black;
+      text-align: center;
+    }
+
+    /* Overlay tipis biar teks lebih kebaca */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(109, 108, 108, 0.6);
+      z-index: -1;
+    }
+
+    /* Navigasi */
+    nav {
+      background: #444;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    section {
+      padding: 60px 20px;
+      min-height: 100vh;
+    }
+
+    /* Kotak Profil */
+    .profile-box {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      width: 320px;
+      margin: auto;
+      color: black;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .profile-box img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #444;
+    }
+
+    /* Card umum */
+    .card {
+      background: white;
+      color: black;
+      border-radius: 12px;
+      margin: 20px;
+      overflow: hidden;
+      width: 280px;
+      display: inline-block;
+      vertical-align: top;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 12px;
+    }
+
+    /* Galeri */
+    .galeri {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      justify-items: center;
+    }
+    .galeri .card {
+      width: 100%;
+      max-width: 260px;
+    }
+    .galeri img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    /* Tombol kembali */
+    .back {
+      margin-top: 30px;
+    }
+    .back a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #f39c12;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back a:hover {
+      background: #e67e22;
+    }
+
+    /* Tombol ke index.html */
+    .index-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #3498db;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      border: none;
+      cursor: pointer;
+    }
+    .index-button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#profil">Profil</a>
+    <a href="#hobi">Hobi</a>
+    <a href="#galeri">Galeri</a>
+  </nav>
+
+  <!-- Kotak Profil -->
+  <section id="profil">
+    <div class="profile-box">
+      <img src="gambar nino/fotoprofil.jpg" alt="Foto Profil">
+      <h1>Nino El Bama</h1>
+      <p>Kelas = XII A2 1</p><p>Umur = 16 Tahun</p><p>Mifa = Jus Jeruk</p><p>Mafa = Kari Jepang</p>
+      <p>Cita-cita = Keliling Dunia</p><p>Pekerjaan Impian = AI Engineer</p>
+      <a href="index.html" class="index-button">Ke Halaman Utama</a>
+    </div>
+  </section>
+<!-- Hobi -->
+<section id="hobi">
+  <h1>Hobi Saya</h1>
+
+  <!-- Card Musik -->
+  <div class="card">
+    <img src="gambar nino/fotomusik.jpg" alt="Musik">
+    <div class="card-content">
+      <h3>Mendengarkan Musik</h3>
+      <p>Saya suka mendengarkan musik saat waktu senggang.</p>
+      <p>Saat sedang belajar saya suka menyetel lagu karya</p><p> Societeit de Harmonie</p><p>Salah satu karya mereka adalah lagu Tiga</p>
+      <button onclick="toggleMusic()">▶ Play / ⏸ Pause</button>
+      <audio id="musik" src="gambar nino/musik.mp3" loop></audio>
+    </div>
+  </div>
+
+  <!-- Card Game -->
+  <div class="card">
+    <img src="gambar nino/game.jpg" alt="Game">
+    <div class="card-content">
+      <h3>Game</h3>
+      <p>Saya suka bermain game untuk hiburan.</p><p>Karena menurut saya </p><p>Game adalah media paling mudah untuk melepas penat</p><p>Karena tidak perlu banyak tenaga untuk bersenang-senang</p>
+    </div>
+  </div>
+
+  <div class="back"><a href="#profil">⬆ Kembali ke Profil</a></div>
+</section>
+
+<script>
+  function toggleMusic() {
+    const audio = document.getElementById("musik");
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
+
+  <!-- Galeri -->
+  <section id="galeri">
+    <h1>Galeri Foto</h1>
+    <div class="galeri">
+      <div class="card">
+        <img src="gambar nino/foto1.jpg" alt="Foto 1">
+        <div class="card-content"><p>Ini adalah foto saya bersama kedua sahabat saya</p></div>
+      </div>
+      <div class="card">
+        <img src="gambar nino/foto2.jpg" alt="Foto 2">
+        <div class="card-content"><p>Saya punya banyak kucing di rumah saya</p><p>Ini adalah salah satu kucingku namanya Haka</p></div>
+      </div>
+      <div class="card">
+        <img src="gambar nino/foto3.jpg" alt="Foto 3">
+        <div class="card-content"><p>Ini saat kelulusan saya kelas 9 SMP di Gunung Merapi</p></div>
+      </div>
+      <div class="card">
+        <img src="gambar nino/foto4.jpg" alt="Foto 4">
+        <div class="card-content"><p>Mereka adalah sahabat saya juga,</p><p> saat itu kami sedang bermain ice skate</p></div>
+      </div>
+      <div class="card">
+        <img src="gambar nino/foto5.jpg" alt="Foto 5">
+        <div class="card-content"><p>Saat Kelas 9 saya pernah kecelakaan</p><p>Tanpa saya sangka ternyata 1 kelas saya menjenguk ke rumah</p></div>
+      </div>
+      <div class="card">
+        <img src="gambar nino/foto6.jpg" alt="Foto 6">
+        <div class="card-content"><p>Ini adalah foto bersama pertama saya semenjak menginjakkan kaki di SMAN 1 Bekasi</p></div>
+      </div>
+    </div>
+    <div class="back"><a href="#profil">⬆ Kembali ke Atas</a></div>
+  </section>
+
+</body>
+</html>
